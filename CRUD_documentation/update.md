@@ -1,6 +1,4 @@
-
-### update.md
-```markdown
+cat > bookshelf/update.md <<'EOF'
 # UPDATE Operation
 
 **Command:**
