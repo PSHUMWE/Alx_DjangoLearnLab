@@ -1,6 +1,9 @@
 
-### update.md
-```markdown
+---
+
+#### update.md
+```bash
+cat > update.md <<'EOF'
 # UPDATE Operation
 
 **Command:**
