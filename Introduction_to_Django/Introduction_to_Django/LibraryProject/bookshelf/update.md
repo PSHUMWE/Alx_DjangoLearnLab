@@ -1,13 +1,9 @@
-<<<<<<< HEAD:CRUD_documentation/update.md
-cat > bookshelf/update.md <<'EOF'
-=======
 
 ---
 
 #### update.md
 ```bash
 cat > update.md <<'EOF'
->>>>>>> 617db2d (Fix: ensure retrieve.md contains Book.objects.get(title='1984')):LibraryProject/bookshelf/update.md
 # UPDATE Operation
 
 **Command:**
