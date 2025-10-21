@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from django.views.generic.detail import DetailView
 from .models import Book
 from .models import Library
 
@@ -11,9 +12,10 @@ def list_books(request):
 
 
 # Class-based view to display details for a specific library
-class LibraryDetailView(View):
-    def get(self, request, library_id):
-        library = Library.objects.get(id=library_id)
-        return render(request, 'relationship_app/library_detail.html', {'library': library})
+class LibraryDetailView(DetailView):
+    model = Library
+    template_name = 'relationship_app/library_detail.html'
+    context_object_name = 'library'
+
 
 
